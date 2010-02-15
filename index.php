@@ -125,6 +125,7 @@
 		<h1>search select</h1>
 		<form method="post">
 			<select multiple="multiple">
+<<<<<<< HEAD
 				<option value="">abcdef</option>
 				<option value="">abc</option>
 				<option value="">abcd</option>
@@ -132,6 +133,9 @@
 				<option value="">e</option>
 				<option value="">f</option>
 				<option value="">g</option>
+=======
+				<option value="">Option (1)</option>
+>>>>>>> 4caca1555559dd46f83738521d0a5e5f054ee611
 				<option value="">hey hey ∆ÿ¯¯≈≈ ((//34)</option>
 				<option value="">Random</option>
 				<option value="">Hello World</option>

@@ -58,15 +58,15 @@
 					
 				});			
 				
-				if (options.sort) {
-					var $sortChilds = $select.children();
-					$sortChilds.sort(options.sortFunc);				
-	
-					$select.empty();
-					$sortChilds.each( function () {;
-						$(this).appendTo($select);
-					});
-				}			
+				var $sortChilds = $select.children();
+				$sortChilds.sort(options.sortFunc);				
+
+				$select.empty();
+				$sortChilds.each( function () {;
+					$(this).appendTo($select);
+				});
+
+				
 			});
 			
 			// Insert all the hidden elements into the select on submit
