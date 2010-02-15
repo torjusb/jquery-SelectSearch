@@ -19,7 +19,9 @@
 			// Insert search input into the dom
 			var $searchHtml = $(options.searchHtml),
 				$search = $searchHtml.find('input[type="text"]');
-
+			
+			// Failsafe
+			options.position = options.position !== ('after' || 'before') ? 'before' : options.position;
 			$select[options.position]($searchHtml);
 			
 			$search.bind('keyup', function () {
@@ -55,7 +57,6 @@
 						$opt.detach();
 						hidden[i] = $opt;
 					}
-					
 				});			
 				
 				if (options.sort) {				
