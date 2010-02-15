@@ -64,14 +64,14 @@
 					$sortChilds.sort(options.sortFunc);				
 	
 					$select.empty();
-					$sortChilds.each( function () {;
+					$sortChilds.each( function () {
 						$(this).appendTo($select);
 					});
 				}
 			});
 			
 			// Insert all the hidden elements into the select on submit
-			$form.submit ( function () {
+			$form.submit( function () {
 				for (var i in hidden) {
 					hidden[i].prependTo($select);
 				}
